@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+    <html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Billionaires Diary</title>
+
+        <!-- Font Awesome CDN -->
+        <script src="https://kit.fontawesome.com/83ad900154.js" crossorigin="anonymous"></script>
+
+        <!-- Tailwind and daisyUI CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+            body{
+                font-family: "Poppins", sans-serif;
+            }
+            
+
+        </style>
+    </head>
+    <body class="overflow-x-hidden">
+
+        <section class="bg-slate-100 ">
+            <div class="container w-11/12 mx-auto flex flex-col lg:flex-row h-screen py-4 rounded-lg ">
+                <!-- Side bar  -->
+                <div class="lg:w-3/12 bg-[#0E1B34] rounded-l-lg p-6 text-center">
+                    <h2 class="text-2xl text-slate-400 font-bold"> Dribble </h2>
+                    <h2 class="text-xl text-slate-400 uppercase tracking-widest"> Company </h2>
+
+                    <div class="mt-7 text-[#0E1B34] ">
+                        <p class="text-lg mb-3 text-slate-400 "> Post Manager----- </p>
+                        <button class="bg-slate-400 py-2 mb-2 w-full flex justify-center items-center hover:bg-white"> 
+                            <span class="flex items-center -ml-6">
+                                <!-- Dashboard icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v7.5h7.5V3H3.75zm0 10.5V21h7.5v-7.5H3.75zM13.5 3v7.5h7.5V3h-7.5zM13.5 13.5V21h7.5v-7.5h-7.5z"/>
+                                </svg>
+                                
+                                <span class="text-md font-semibold ml-2">Dashboard</span>
+                            </span>
+                            
+                            
+                        </button>
+                        
+                        <button class="bg-slate-400 py-2 mb-2 w-full flex justify-center items-center hover:bg-white"> 
+                            <span class="flex items-center ml-2">
+                                <!-- Schedule post icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2m6-6A10.5 10.5 0 1112 1.5 10.5 10.5 0 0118 12"/>
+                                </svg>
+                               
+                                <span class="text-md font-semibold ml-2">Schedule Posts</span>
+                            </span>
+                        </button>
+                        
+                        <button class="bg-slate-400 py-2 mb-2 w-full flex justify-center items-center hover:bg-white"> 
+                            
+                            <span class="flex items-center -ml-9">
+                                <!-- Calendar icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5m7.5-1.5v1.5M3.75 9h16.5M4.5 5.25h15a2.25 2.25 0 012.25 2.25v12.75a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V7.5a2.25 2.25 0 012.25-2.25z"/>
+                                </svg>
+                                
+                                <span class="text-md font-semibold ml-2">Calender</span>
+                            </span>
+                        </button>
+                        
+                        <button class="bg-slate-400 py-2 mb-2 w-full flex justify-center items-center hover:bg-white"> 
+                            <span class="flex items-center">
+                                <!-- Analytics icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h18v18H3V3zm3 14h2v-4H6v4zm4 0h2v-7h-2v7zm4 0h2v-10h-2v10zm4 0h2v-13h-2v13z"/>
+                                </svg>
+                                
+                                <span class="text-md font-semibold ml-2">Post Analytics</span>
+                            </span>
+                        </button>
+                        
+
+                        <div class="flex justify-center my-5 ">
+                            <img src="images/Group 23.png" alt="" class="w-48 ">
+                        </div>
+
+                       
+                    </div>
+                </div>
+
+                <!-- Content  -->
+                <div class="lg:w-9/12 bg-slate-300  rounded-r-lg border-2 border-[#0E1B34]">
+                    <div class="bg-[#0E1B34] rounded-r-lg">
+                        <div class="flex justify-between p-4">
+                            <label class="input focus:border-none flex items-center gap-2 ">
+                                <input type="text" class="grow" placeholder="Search Schedule Posts" />
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 16 16"
+                                  fill="currentColor"
+                                  class="h-4 w-4 opacity-70">
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                                    clip-rule="evenodd" />
+                                </svg>
+                            </label>
+                            <div class="">
+                                <img src="images/Group 1.png" alt="" class="w-12 h-12">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Table  -->
+                    <div class="p-6">
+                        <h2 class="text-lg text-[#0E1B34] font-bold">Schedule, publish and manage posts and stories, and more.</h2>
+                        <form class="flex gap-4 mt-2">
+                            <!-- Platform Selector -->
+                            <div class="flex flex-col w-1/4">
+                                <select id="platform" class="p-1 text-gray-400 border rounded-md focus:ring-2 focus:ring-blue-500">
+                                    <option value="" disabled selected>Select Platform</option>
+                                    <option value="facebook">Facebook</option>
+                                    <option value="twitter">Twitter</option>
+                                    <option value="instagram">Instagram</option>
+                                    <option value="linkedin">LinkedIn</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Status Selector -->
+                            <div class="flex flex-col w-1/4">
+                                <select id="status" class="p-1 text-gray-400 border rounded-md focus:ring-2 focus:ring-blue-500">
+                                    <option value="" disabled selected>Select Status</option>
+                                    <option value="draft">Draft</option>
+                                    <option value="scheduled">Scheduled</option>
+                                    <option value="published">Published</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Date Picker Selector -->
+                            <div class="flex flex-col w-1/4">
+                                <select id="date-picker" class="p-1 text-gray-400 border rounded-md focus:ring-2 focus:ring-blue-500">
+                                    <option value="" disabled selected>Select Date</option>
+                                    <option value="today">Today</option>
+                                    <option value="tomorrow">Tomorrow</option>
+                                    <option value="next-week">Next Week</option>
+                                </select>
+                            </div>
+                            
+
+                           <h2 class="font-bold mt-2 -ml-3">Clear</h2>
+
+                           <div class="flex flex-col w-1/4 relative">
+                            <input 
+                                type="text" 
+                                placeholder="Search post by ID..." 
+                                class="p-1 pl-10 border rounded-md focus:ring-2 focus:ring-blue-500 text-gray-400" 
+                            />
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 16 16"
+                                fill="currentColor"
+                                class="absolute left-3 top-2.5 h-4 w-4 opacity-70">
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        
+                           
+                        </form>
+                        
+
+                        <div class="table">
+                            <div class="overflow-x-hidden">
+                                <table class="table table-zebra mt-4">
+                                    <!-- head -->
+                                    <thead class="mt-3">
+                                        <tr>
+                                            <th class="font-bold text-lg text-blue-950">Select</th>
+                                            <th class="font-bold text-lg text-blue-950">Post Content</th>
+                                            <th class="font-bold text-lg text-blue-950">Date Scheduled</th>
+                                            <th class="font-bold text-lg text-blue-950">Platform</th>
+                                            <th class="font-bold text-lg text-blue-950">Action</th>
+                                           
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <!-- row 1 -->
+                                        <tr>
+                                            <td>Cy Ganderton </td>
+                                            <td class="cursor-pointer" ></td>
+                                            <td>Wed Oct 15, 3:07</td>
+                                            <td>Facebook</td>
+                                            <td><button class="flex items-center text-blue-950 bg-transparent hover:bg-blue-100 p-2 border border-blue-950 rounded-md">
+                                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                 viewBox="0 0 24 24"
+             stroke-width="1.5"
+                 stroke="currentColor"
+                class="h-5 w-5 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232a2 2 0 012.828 0l1.414 1.414a2 2 0 010 2.828L8.586 19.414a2 2 0 01-1.414.586H4a1 1 0 01-1-1v-3.172a2 2 0 01.586-1.414l10.646-10.646zM16.586 7.414l-2.828-2.828-1.414 1.414 2.828 2.828 1.414-1.    414z" />
+                                      </svg>
+                              <span class="text-md font-semibold">Edit Post</span>
+                                         </button>
+                                            </td>
+                                            <td>
+                                                <button class="flex items-center text-red-600 bg-transparent hover:bg-red-100 p-2 border border-red-600 rounded-md">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                        stroke-width="1.5"
+                                                        stroke="currentColor"
+                                                        class="h-5 w-5 mr-2">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 7v14a2 2 0 002 2h8a2 2 0 002-2V7M6 7h12M6 7h12m-3-5h-6m1.5 0V3m-3 0h6m-6 0h-3.5a1.5 1.5 0 00-1.5 1.5V6h18V4.5a1.5 1.5 0 00-1.5-1.5H12z" />
+                                                    </svg>
+                                                    <span class="text-md font-semibold">Delete Post</span>
+                                                </button>
+                                                
+                                            </td>
+                                        </tr>
+
+                                        <!-- row 2 -->
+                                        <tr>
+                                            <td>Cy Ganderton </td>
+                                            <td class="cursor-pointer" ><i class="fa-solid fa-eye"></i> </td>
+                                            <td>Wed Oct 17, 3:07 </td>
+                                            <td>Instagram</td>
+                                            <td><button class="flex items-center text-blue-950 bg-transparent hover:bg-blue-100 p-2 border border-blue-950 rounded-md">
+                                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                 viewBox="0 0 24 24"
+             stroke-width="1.5"
+                 stroke="currentColor"
+                class="h-5 w-5 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232a2 2 0 012.828 0l1.414 1.414a2 2 0 010 2.828L8.586 19.414a2 2 0 01-1.414.586H4a1 1 0 01-1-1v-3.172a2 2 0 01.586-1.414l10.646-10.646zM16.586 7.414l-2.828-2.828-1.414 1.414 2.828 2.828 1.414-1.    414z" />
+                                      </svg>
+                              <span class="text-md font-semibold">Edit Post</span>
+                                         </button>
+                                            </td>
+                                            <td>
+                                                <button class="flex items-center text-red-600 bg-transparent hover:bg-red-100 p-2 border border-red-600 rounded-md">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                        stroke-width="1.5"
+                                                        stroke="currentColor"
+                                                        class="h-5 w-5 mr-2">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 7v14a2 2 0 002 2h8a2 2 0 002-2V7M6 7h12M6 7h12m-3-5h-6m1.5 0V3m-3 0h6m-6 0h-3.5a1.5 1.5 0 00-1.5 1.5V6h18V4.5a1.5 1.5 0 00-1.5-1.5H12z" />
+                                                    </svg>
+                                                    <span class="text-md font-semibold">Delete Post</span>
+                                                </button>
+                                                
+                                            </td>
+                                        </tr>
+
+                                        <!-- row 3 -->
+                                        <tr>
+                                            <td>Cy Ganderton </td>
+                                            <td class="cursor-pointer" ><i class="fa-solid fa-eye"></i> </td>
+                                            <td>Wed Oct 18, 3:07 </td>
+                                            <td>Twitter</td>
+                                            <td><button class="flex items-center text-blue-950 bg-transparent hover:bg-blue-100 p-2 border border-blue-950 rounded-md">
+                                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                 viewBox="0 0 24 24"
+             stroke-width="1.5"
+                 stroke="currentColor"
+                class="h-5 w-5 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232a2 2 0 012.828 0l1.414 1.414a2 2 0 010 2.828L8.586 19.414a2 2 0 01-1.414.586H4a1 1 0 01-1-1v-3.172a2 2 0 01.586-1.414l10.646-10.646zM16.586 7.414l-2.828-2.828-1.414 1.414 2.828 2.828 1.414-1.    414z" />
+                                      </svg>
+                              <span class="text-md font-semibold">Edit Post</span>
+                                         </button>
+                                            </td>
+                                            <td>
+                                                <button class="flex items-center text-red-600 bg-transparent hover:bg-red-100 p-2 border border-red-600 rounded-md">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                        stroke-width="1.5"
+                                                        stroke="currentColor"
+                                                        class="h-5 w-5 mr-2">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 7v14a2 2 0 002 2h8a2 2 0 002-2V7M6 7h12M6 7h12m-3-5h-6m1.5 0V3m-3 0h6m-6 0h-3.5a1.5 1.5 0 00-1.5 1.5V6h18V4.5a1.5 1.5 0 00-1.5-1.5H12z" />
+                                                    </svg>
+                                                    <span class="text-md font-semibold">Delete Post</span>
+                                                </button>
+                                                
+                                            </td>
+                                        </tr>
+
+                                       
+                                        
+
+                                        
+
+                                    </tbody>
+                                </table>
+
+                               
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    
+       
+    </body>
+</html>
