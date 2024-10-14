@@ -5,7 +5,7 @@
 
 
 ## Project Live Link:
-<p align="center">https://ela60.github.io/3-screen-Dhashboard/index.html<a href=>Click Here to Visit Live Project</a>Here Click the link </p>
+<p align="center">https://ela60.github.io/3-screen-Dhashboard/</p>
 
 ## Project Layout:
 
