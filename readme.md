@@ -5,9 +5,18 @@
 
 
 ## Project Live Link:
-<p align="center"> <a href=>Click Here to Visit Live Project</a> </p>
+<p align="center">https://ela60.github.io/3-screen-Dhashboard/ <a href=>Click Here to Visit Live Project</a> </p>
 
 ## Project Layout:
+
+
+## OverView Project:
+1. Screen-1(Schedule Posts):
+  <img src="images/1st.png" alt="">
+2. Screen-2(Calender):
+  <img src="images/2nd.png" alt="">
+3. Screen-3(Post Analytics):
+  <img src="images/3rd.png" alt="">
 
 
 ## Features:
