@@ -32,3 +32,5 @@ checkbox.addEventListener('change', function(event) {
         event.target.checked = true; // Keep it checked
     }
 });
+
+ 
