@@ -1,11 +1,11 @@
-<h1 align="center">Billionaires Diary</h1>
+<h1 align="center"> Diary</h1>
 <h3 align="center">Html Template</h3>
 
 <p align="center">All Details Collections of Billionaires</p>
 
 
 ## Project Live Link:
-<p align="center"> <a href="https://rehan606.github.io/Billionaires-Diary/" >Click Here to Visit Live Project</a> </p>
+<p align="center"> <a href=>Click Here to Visit Live Project</a> </p>
 
 ## Project Layout:
 <p align="center"><img src="images/Screenshot_8.png" alt=""></p>
