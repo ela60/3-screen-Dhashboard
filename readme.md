@@ -15,7 +15,7 @@
     <li>Fully responsive design</li>
     <li>Clean and modern layout</li>
     <li>Easy-to-navigate menu sections</li>
-    <li>Perfect for Millionair Diary</li>
+    <li>Perfect for Dashboard</li>
     <li>Cross-browser compatibility</li>
 </ol>
 
@@ -25,6 +25,7 @@
     <li>HTML</li>
     <li>TAILWIND CSS</li>
     <li>DAISY UI</li>
+    <li>Javascript</li>
 </ol>
 
 
