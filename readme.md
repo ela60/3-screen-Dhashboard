@@ -8,7 +8,7 @@
 <p align="center"> <a href=>Click Here to Visit Live Project</a> </p>
 
 ## Project Layout:
-<p align="center"><img src="images/Screenshot_8.png" alt=""></p>
+
 
 ## Features:
 <ol>
