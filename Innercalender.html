@@ -149,8 +149,8 @@
 
                        
                         <!-- head section -->
-                        <table class="overflow-x-auto table ">
-                            <section class="flex justify-between gap-34">
+                        
+                            <section class="flex justify-between gap-34 hidden md:flex" >
                                 <div>
                                     <div class="flex items-center gap-3">
                                       <div class="avatar">
@@ -211,41 +211,38 @@
                                    
                             </section>
     
-                        </table>
-
-
 
                         <!-- body section -->
-                         <section class="flex flex-col md:flex-row gap-2 w-[920px] ">
+                         <section class="flex flex-col md:flex-row gap-2 md:w-[920px] ">
 
                             
                             <!-- left section -->
                          <section class="flex-1  md:p-6 ">
                             <!-- first part -->
-                            <div class="bg-white w-[570px]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:-ml-7 ">
+                            <div class="bg-white md:w-[560px]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:-ml-7 ">
                                 <!-- Column 1 -->
-                                <div class="text-center p-4 ">
+                                <div class="text-center p-3 ">
                                     <h2 class="text-md text-[#64748B] font-bold mb-2">Reach</h2>
                                     <p class="text-black font-bold text-md mb-4">102</p>
                                     <button class="px-2 p-2 text-[9px] text-nowrap font-bold rounded-2xl text-[#1A8245] bg-[#b1e6c6]">Higher than typical</button>
                                   </div>
                               
                                 <!-- Column 2 -->
-                                <div class="text-center p-4 ">
+                                <div class="text-center  p-3">
                                     <h2 class="text-md text-[#64748B] font-bold mb-2">Impressions</h2>
                                     <p class="text-black font-bold text-md mb-4">106</p>
                                     <button class="px-2 p-2 text-[9px] text-nowrap font-bold rounded-2xl text-[#1A8245] bg-[#b1e6c6]">Higher than typical</button>
                                   </div>
                               
                                 <!-- Column 3 -->
-                                <div class="text-center p-4 ">
+                                <div class="text-center p-3  ">
                                     <h2 class="text-md text-[#64748B] font-bold mb-2">Interactions</h2>
                                     <p class="text-black font-bold text-md mb-4">4</p>
                                     <button class="px-2 p-2 text-[9px] text-nowrap font-bold rounded-2xl text-[#1A8245] bg-[#b1e6c6]">Higher than typical</button>
                                   </div>
                               
                                 <!-- Column 4 -->
-                                <div class="text-center p-4  ">
+                                <div class="text-center p-3 ">
                                   <h2 class="text-md text-[#64748B] font-bold mb-2">Link clicks</h2>
                                   <p class="text-black font-bold text-md mb-4">--</p>
                                   <button class="px-2 p-2 text-[9px] text-nowrap font-bold rounded-2xl text-[#a3d7b8] bg-[rgb(231,255,240)]">Higher than typical</button>
@@ -253,8 +250,9 @@
                               </div>
                               
                               <!-- 2nd part -->
-                             <div class="md:-ml-11 -mt-8 ">
-                                <svg width="600"  height="458" viewBox="0 0 733 458" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <div class="md:-ml-7 md:-mt-12 -mt-32">
+                                <svg  class="w-56 md:w-full  ]" 
+                                 width="650"  height="458" viewBox="0 0 733 458" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g filter="url(#filter0_d_28_639)">
                                     <rect x="16" y="14" width="701" height="426" rx="8" fill="white" shape-rendering="crispEdges"/>
                                     <path d="M48.58 59L45.5 53.56H44.18V59H41.38V45.04H46.62C47.7 45.04 48.62 45.2333 49.38 45.62C50.14 45.9933 50.7067 46.5067 51.08 47.16C51.4667 47.8 51.66 48.52 51.66 49.32C51.66 50.24 51.3933 51.0733 50.86 51.82C50.3267 52.5533 49.5333 53.06 48.48 53.34L51.82 59H48.58ZM44.18 51.46H46.52C47.28 51.46 47.8467 51.28 48.22 50.92C48.5933 50.5467 48.78 50.0333 48.78 49.38C48.78 48.74 48.5933 48.2467 48.22 47.9C47.8467 47.54 47.28 47.36 46.52 47.36H44.18V51.46ZM63.7925 53.22C63.7925 53.62 63.7658 53.98 63.7125 54.3H55.6125C55.6792 55.1 55.9592 55.7267 56.4525 56.18C56.9458 56.6333 57.5525 56.86 58.2725 56.86C59.3125 56.86 60.0525 56.4133 60.4925 55.52H63.5125C63.1925 56.5867 62.5792 57.4667 61.6725 58.16C60.7658 58.84 59.6525 59.18 58.3325 59.18C57.2658 59.18 56.3058 58.9467 55.4525 58.48C54.6125 58 53.9525 57.3267 53.4725 56.46C53.0058 55.5933 52.7725 54.5933 52.7725 53.46C52.7725 52.3133 53.0058 51.3067 53.4725 50.44C53.9392 49.5733 54.5925 48.9067 55.4325 48.44C56.2725 47.9733 57.2392 47.74 58.3325 47.74C59.3858 47.74 60.3258 47.9667 61.1525 48.42C61.9925 48.8733 62.6392 49.52 63.0925 50.36C63.5592 51.1867 63.7925 52.14 63.7925 53.22ZM60.8925 52.42C60.8792 51.7 60.6192 51.1267 60.1125 50.7C59.6058 50.26 58.9858 50.04 58.2525 50.04C57.5592 50.04 56.9725 50.2533 56.4925 50.68C56.0258 51.0933 55.7392 51.6733 55.6325 52.42H60.8925ZM64.4163 53.42C64.4163 52.3 64.6363 51.3067 65.0763 50.44C65.5296 49.5733 66.1363 48.9067 66.8963 48.44C67.6696 47.9733 68.5296 47.74 69.4763 47.74C70.3029 47.74 71.0229 47.9067 71.6363 48.24C72.2629 48.5733 72.7629 48.9933 73.1363 49.5V47.92H75.9563V59H73.1363V57.38C72.7763 57.9 72.2763 58.3333 71.6363 58.68C71.0096 59.0133 70.2829 59.18 69.4563 59.18C68.5229 59.18 67.6696 58.94 66.8963 58.46C66.1363 57.98 65.5296 57.3067 65.0763 56.44C64.6363 55.56 64.4163 54.5533 64.4163 53.42ZM73.1363 53.46C73.1363 52.78 73.0029 52.2 72.7363 51.72C72.4696 51.2267 72.1096 50.8533 71.6563 50.6C71.2029 50.3333 70.7163 50.2 70.1963 50.2C69.6763 50.2 69.1963 50.3267 68.7563 50.58C68.3163 50.8333 67.9563 51.2067 67.6763 51.7C67.4096 52.18 67.2763 52.7533 67.2763 53.42C67.2763 54.0867 67.4096 54.6733 67.6763 55.18C67.9563 55.6733 68.3163 56.0533 68.7563 56.32C69.2096 56.5867 69.6896 56.72 70.1963 56.72C70.7163 56.72 71.2029 56.5933 71.6563 56.34C72.1096 56.0733 72.4696 55.7 72.7363 55.22C73.0029 54.7267 73.1363 54.14 73.1363 53.46ZM77.2709 53.46C77.2709 52.3133 77.5043 51.3133 77.9709 50.46C78.4376 49.5933 79.0843 48.9267 79.9109 48.46C80.7376 47.98 81.6843 47.74 82.7509 47.74C84.1243 47.74 85.2576 48.0867 86.1509 48.78C87.0576 49.46 87.6643 50.42 87.9709 51.66H84.9509C84.7909 51.18 84.5176 50.8067 84.1309 50.54C83.7576 50.26 83.2909 50.12 82.7309 50.12C81.9309 50.12 81.2976 50.4133 80.8309 51C80.3643 51.5733 80.1309 52.3933 80.1309 53.46C80.1309 54.5133 80.3643 55.3333 80.8309 55.92C81.2976 56.4933 81.9309 56.78 82.7309 56.78C83.8643 56.78 84.6043 56.2733 84.9509 55.26H87.9709C87.6643 56.46 87.0576 57.4133 86.1509 58.12C85.2443 58.8267 84.1109 59.18 82.7509 59.18C81.6843 59.18 80.7376 58.9467 79.9109 58.48C79.0843 58 78.4376 57.3333 77.9709 56.48C77.5043 55.6133 77.2709 54.6067 77.2709 53.46ZM95.5622 47.76C96.4022 47.76 97.1489 47.9467 97.8022 48.32C98.4555 48.68 98.9622 49.22 99.3222 49.94C99.6955 50.6467 99.8822 51.5 99.8822 52.5V59H97.0822V52.88C97.0822 52 96.8622 51.3267 96.4222 50.86C95.9822 50.38 95.3822 50.14 94.6222 50.14C93.8489 50.14 93.2355 50.38 92.7822 50.86C92.3422 51.3267 92.1222 52 92.1222 52.88V59H89.3222V44.2H92.1222V49.3C92.4822 48.82 92.9622 48.4467 93.5622 48.18C94.1622 47.9 94.8289 47.76 95.5622 47.76Z" fill="black"/>
@@ -308,13 +306,13 @@
                          </section>
 
                           <!-- right section -->
-                          <section class="flex-1 p-4 md:p-5 border mt-6 bg-white -ml-8 h-[510px]">
-                            <h2>Post Preview</h2>
+                      <section class="flex-1 p-4 md:p-5 border -mt-36 md:mt-6 bg-white  md:-ml-5 h-[510px]">
+                            <h2 class="text-center md:text-left">Post Preview</h2>
                             <!-- row 1 -->
                             <tr>
                                 
                                 <td>
-                                  <div class="flex items-center gap-3">
+                                  <div class="flex flex-col lg:flex-row items-center gap-3">
                                     <div class="avatar">
                                       <div class="mask mask-squircle h-12 w-12">
                                         <img
@@ -323,12 +321,12 @@
                                       </div>
                                     </div>
                                     <div>
-                                      <a href="#" class="font-bold text-[12px] text-nowrap ">
-                                       <span class="text-[#7145FE]"> Account Name</span> update a post in <span class="text-[#CE67FE]">Twitter</span>
+                                      <a href="#" class="font-bold text-[12px] md:text-nowrap ">
+                                       <span class="text-[#7145FE]"> Account Name</span> update a post in <span class="text-[#CE67FE] ">Twitter</span>
                                       </a>
                                       
                                       <div class="text-sm ">
-                                          <div class="flex items-center gap-2 mt-1">
+                                          <div class="flex flex-col lg:flex-row items-center gap-2 mt-1">
                                              
                                               <!-- Scheduled Button -->
                                               <button class="px-1 text-[10px] font-bold rounded-2xl text-[#1A8245] bg-[#b1e6c6]">Published</button>
@@ -349,7 +347,7 @@
                                 Lorem ipsum odor amet, consectetuer adipiscing elit. Cras fringilla scelerisque facilisi dictumst neque consequat blandit non libero. Non ornare ridiculus netus aliquet curabitur. Commodo enim amet consectetur maximus eget sodales nulla facilisis. Malesuada elementum pellentesque sociosqu hendrerit gravida rhoncus. Lacinia eget suspendisse eros mollis arcu. </p>
 
                                 <div>
-                                    <img src="images/Post Thumbnail.png" alt="">
+                                    <img src="images/Post Thumbnail.png" class=" " alt="">
                                 </div>
                         </section>
 
