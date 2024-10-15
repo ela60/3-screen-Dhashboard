@@ -1,7 +1,7 @@
-<h1 align="center"> Diary</h1>
+<h1 align="center"> Dashboard</h1>
 <h3 align="center">Html Template</h3>
 
-<p align="center">All Details Collections of Billionaires</p>
+<p align="center">All Details of Social Dashboards</p>
 
 
 ## Project Live Link:
