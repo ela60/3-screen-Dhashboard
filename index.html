@@ -28,8 +28,8 @@
             <div class="container w-11/12 mx-auto flex flex-col lg:flex-row h-screen py-4 rounded-lg ">
                 <!-- Side bar  -->
                 <div class="  rounded-l-lg p-6 text-center">
-                   <div class="ml-14  ">
-                    <svg width="69" height="70" viewBox="0 0 69 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                   <div class="md:ml-14 ml-16  ">
+                    <svg width="75" height="80" viewBox="0 0 69 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="69" height="70" fill="url(#pattern0_1_371)"/>
                         <defs>
                         <pattern id="pattern0_1_371" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -102,7 +102,7 @@
                     </div>
 
                     <!-- bottom section -->
-                     <section class="mt-40 ">
+                     <section class="md:mt-40 -ml-4 mt-2 ">
                         <div class="flex justify-center items-center gap-2 text-[#64748B]">
                             <i class="fa-solid fa-gear text-xl"></i> <!-- Icon -->
                             <h2 class="text-md font-semibold mr-8">Settings</h2> <!-- Heading -->
@@ -127,25 +127,27 @@
                 <!-- Content  -->
                 <div class=" rounded-r-lg  border-l-2">
                     <div class="rounded-r-lg py-2 ">
-                        <div class="flex justify-between">
-                           <div class="ml-4">
-                            <h2 class="text-lg text-[#0E1B34] font-bold">Schedule Posts</h2>
-                            <p class="text-sm">Schedule, publish and manage posts and stories, and more.</p>
-                           </div>
-                           <!-- create post -->
-                           <div class="flex flex-col md:flex-row items-center justify-center gap-3 p-4">
-                            <button class="flex items-center bg-[#7145FE] text-white p-2 rounded-md hover:bg-[#8A6EF0]">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5 mr-1">
-                                    <path fill-rule="evenodd" d="M12 2a1 1 0 0 1 1 1v8h8a1 1 0 1 1 0 2h-8v8a1 1 0 0 1-2 0v-8H3a1 1 0 1 1 0-2h8V3a1 1 0 0 1 1-1z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-sm">Create Post</span>
-                                <select id="create-post" class="px-2 focus:ring-2 focus:ring-blue-500 bg-[#7145FE] text-white rounded-md ml-2">
-                                    
-                                </select>
-                            </button>
+                        <div class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 p-4">
+                            <!-- Left Content -->
+                            <div class="text-center md:text-left ml-4">
+                                <h2 class="text-lg text-[#0E1B34] font-bold">Schedule Posts </h2>
+                                <p class="text-sm">Schedule, publish and manage posts and stories, and more.</p>
+                            </div>
+                            
+                            <!-- Create Post Button Section -->
+                            <div class="flex flex-col md:flex-row items-center justify-center gap-3">
+                                <button class="flex items-center bg-[#7145FE] text-white p-2 rounded-md hover:bg-[#8A6EF0]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5 mr-1">
+                                        <path fill-rule="evenodd" d="M12 2a1 1 0 0 1 1 1v8h8a1 1 0 1 1 0 2h-8v8a1 1 0 0 1-2 0v-8H3a1 1 0 1 1 0-2h8V3a1 1 0 0 1 1-1z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="text-sm">Create Post</span>
+                                    <select id="create-post" class="px-2 focus:ring-2 focus:ring-blue-500 bg-[#7145FE] text-white rounded-md ml-2">
+                                        <!-- Add options here if necessary -->
+                                    </select>
+                                </button>
+                            </div>
                         </div>
                         
-                        </div>
                     </div>
 
                     <!-- Table  -->
@@ -154,10 +156,10 @@
                     
                  <div class="bg-[#E1E8FF] p-4 border-t-2 border-l-2">
                     <div class="p-6 bg-white">
-                        <form class="flex gap-4 mt-2">
+                        <form class="flex flex-col md:flex-row gap-4 mt-2">
                             <!-- Platform Selector -->
-                            <div class="flex flex-col w-1/4 text-sm">
-                                <select id="platform" class="p-1 text-gray-400 border rounded-md focus:ring-2 focus:ring-blue-500">
+                            <div class="flex flex-col w-full md:w-1/4 text-sm">
+                                <select id="platform" class="p-2 text-gray-400 border rounded-md focus:ring-2 focus:ring-blue-500">
                                     <option value="" disabled selected>Select Platform</option>
                                     <option value="facebook">Facebook</option>
                                     <option value="twitter">Twitter</option>
@@ -165,60 +167,59 @@
                                     <option value="linkedin">LinkedIn</option>
                                 </select>
                             </div>
-                            
+                        
                             <!-- Status Selector -->
-                            <div class="flex flex-col w-1/4 text-sm">
-                                <select id="status" class="p-1 text-gray-400 border rounded-md focus:ring-2 focus:ring-blue-500">
+                            <div class="flex flex-col w-full md:w-1/4 text-sm">
+                                <select id="status" class="p-2 text-gray-400 border rounded-md focus:ring-2 focus:ring-blue-500">
                                     <option value="" disabled selected>Select Status</option>
                                     <option value="draft">Draft</option>
                                     <option value="scheduled">Scheduled</option>
                                     <option value="published">Published</option>
                                 </select>
                             </div>
-                            
+                        
                             <!-- Date Picker Selector -->
-                            <div class="flex flex-col w-1/4">
-                                <select id="date-picker" class="p-1 text-gray-400 border rounded-md focus:ring-2 focus:ring-blue-500 text-sm ">
+                            <div class="flex flex-col w-full md:w-1/4">
+                                <select id="date-picker" class="p-2 text-gray-400 border rounded-md focus:ring-2 focus:ring-blue-500 text-sm">
                                     <option value="" disabled selected>Select Date</option>
                                     <option value="today">Today</option>
                                     <option value="tomorrow">Tomorrow</option>
                                     <option value="next-week">Next Week</option>
                                 </select>
                             </div>
-                            
-
-                           <h2 class=" mt-1 text-sm text-[#7145FE] -ml-3">Clear</h2>
-
-                           <div class="flex flex-col w-1/4 relative">
-                            <input 
-                                type="text" 
-                                placeholder="Search post by ID..." 
-                                class="p-1 pl-10 text-sm border rounded-md focus:ring-2 focus:ring-blue-500 text-gray-400" 
-                            />
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 16 16"
-                                fill="currentColor"
-                                class="absolute left-3 top-1.5 h-5 w-4 opacity-70">
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </div>
                         
-                           
+                            <h2 class="mt-1 text-sm text-[#7145FE] md:-ml-3">Clear</h2>
+                        
+                            <div class="flex flex-col w-full md:w-1/4 relative">
+                                <input 
+                                    type="text" 
+                                    placeholder="Search post by ID..." 
+                                    class="p-2 pl-10 text-sm border rounded-md focus:ring-2 focus:ring-blue-500 text-gray-400" 
+                                />
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 16 16"
+                                    fill="currentColor"
+                                    class="absolute left-3 top-1.5 h-5 w-4 opacity-70">
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
                         </form>
+                        
                         <div class="overflow-x-auto">
-                            <table class="table mt-3">
+                            
+                            <table class="table mt-3 ">
                               <!-- head -->
                               <thead >
                                 <tr>
-                                  <th class="text-[#2f2e2e] text-md">Select </th>
-                                  <th class="text-[#2f2e2e] text-md">Post Content</th>
-                                  <th class="text-[#2f2e2e] text-md">Date Scheduled</th>
-                                  <th class="text-[#2f2e2e] text-md ">Platform</th>
-                                  <th class="text-center text-[#2f2e2e]">Action</th>
+                                    <th class="text-[#2f2e2e] text-md border-b">Select</th>
+                                    <th class="text-[#2f2e2e] text-md border-b">Post Content</th>
+                                    <th class="text-[#2f2e2e] text-md border-b">Date Scheduled</th>
+                                    <th class="text-[#2f2e2e] text-md border-b">Platform</th>
+                                    <th class="text-center text-[#2f2e2e] border-b">Action</th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -424,55 +425,56 @@
                               </tbody>
                              
                             </table>
-                            <!-- table footer -->
-                            <section class="mt-28 flex flex-col md:flex-row justify-between items-center">
-                                <div class="flex items-center gap-3 mb-4 md:mb-0">
-                                    <h3 class="text-gray-500 text-nowrap">Items Per Page</h3>
-                                    <div class="flex items-center">
-                                        <select id="selector" class="border border-gray-400 rounded-lg px-3 mr-3 text-[#020305] text-md">
-                                            <option value="all">All</option>
-                                            <!-- Add more options as needed -->
-                                        </select>
-                                    </div>
-                                </div>
-                            
-                                <nav aria-label="Pagination">
-                                    <ul class="flex space-x-2">
-                                        <li>
-                                            <a href="index.html">
-                                                <button class="pagination-btn bg-gray-300 text-gray-700 hover:bg-gray-400 rounded-lg px-3 py-1">
-                                                    <i class="fas fa-chevron-left"></i> <!-- Left Arrow Icon -->
-                                                </button>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html">
-                                                <button class="pagination-btn bg-[#7145FE] text-white rounded-lg px-3 py-1 active" id="page-1">1</button>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="calender.html">
-                                                <button class="pagination-btn bg-white text-gray-700 border border-gray-300 hover:bg-gray-200 rounded-lg px-3 py-1" id="page-2">2</button>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Innercalender.html">
-                                                <button class="pagination-btn bg-white text-gray-700 border border-gray-300 hover:bg-gray-200 rounded-lg px-3 py-1" id="page-3">3</button>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html">
-                                                <button class="pagination-btn bg-gray-300 text-gray-700 hover:bg-gray-400 rounded-lg px-3 py-1">
-                                                    <i class="fas fa-chevron-right"></i> <!-- Right Arrow Icon -->
-                                                </button>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </section>
+                           
                             
                             
                           </div>
+                           <!-- table footer -->
+                           <section class="mt-28 flex flex-col md:flex-row justify-between items-center">
+                            <div class="flex items-center gap-3 mb-4 md:mb-0">
+                                <h3 class="text-gray-500 text-nowrap">Items Per Page</h3>
+                                <div class="flex items-center">
+                                    <select id="selector" class="border border-gray-400 rounded-lg px-3 mr-3 text-[#020305] text-md">
+                                        <option value="all">All</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </div>
+                            </div>
+                        
+                            <nav aria-label="Pagination">
+                                <ul class="flex space-x-2">
+                                    <li>
+                                        <a href="index.html">
+                                            <button class="pagination-btn bg-gray-300 text-gray-700 hover:bg-gray-400 rounded-lg px-3 py-1">
+                                                <i class="fas fa-chevron-left"></i> <!-- Left Arrow Icon -->
+                                            </button>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html">
+                                            <button class="pagination-btn bg-[#7145FE] text-white rounded-lg px-3 py-1 active" id="page-1">1</button>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="calender.html">
+                                            <button class="pagination-btn bg-white text-gray-700 border border-gray-300 hover:bg-gray-200 rounded-lg px-3 py-1" id="page-2">2</button>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Innercalender.html">
+                                            <button class="pagination-btn bg-white text-gray-700 border border-gray-300 hover:bg-gray-200 rounded-lg px-3 py-1" id="page-3">3</button>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html">
+                                            <button class="pagination-btn bg-gray-300 text-gray-700 hover:bg-gray-400 rounded-lg px-3 py-1">
+                                                <i class="fas fa-chevron-right"></i> <!-- Right Arrow Icon -->
+                                            </button>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </section>
                         
 
                        

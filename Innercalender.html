@@ -28,8 +28,8 @@
             <div class="container w-11/12 mx-auto flex flex-col lg:flex-row h-screen py-4 rounded-lg ">
                 <!-- Side bar  -->
                 <div class="  rounded-l-lg p-4 text-center">
-                   <div class="ml-14  ">
-                    <svg width="69" height="70" viewBox="0 0 69 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                   <div class=" md:ml-14 ml-16  ">
+                    <svg width="75" height="80" viewBox="0 0 69 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="69" height="70" fill="url(#pattern0_1_371)"/>
                         <defs>
                         <pattern id="pattern0_1_371" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -97,7 +97,7 @@
                     </div>
 
                     <!-- bottom section -->
-                     <section class="mt-56 ">
+                     <section class="md:mt-40 -ml-4 mt-3 ">
                         <div class="flex justify-center items-center gap-2 text-[#64748B]">
                             <i class="fa-solid fa-gear text-xl"></i> <!-- Icon -->
                             <h2 class="text-md font-semibold mr-8">Settings</h2> <!-- Heading -->
@@ -122,24 +122,25 @@
                 <!-- Content  -->
                 <div class=" rounded-r-lg  border-l-2 ml-8">
                     <div class="rounded-r-lg py-2 ">
-                        <div class="flex justify-between">
-                           <div class="ml-4">
-                            <h2 class="text-lg text-[#0E1B34] font-bold">Post Analytics</h2>
-                            <p class="text-sm">Schedule, publish and manage posts and stories, and more.</p>
-                           </div>
-                           <!-- create post -->
-                           <div class="flex flex-col md:flex-row items-center justify-center gap-3 p-4">
-                            <button class="flex items-center bg-[#7145FE] text-white p-2 rounded-md hover:bg-[#8A6EF0]">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5 mr-1">
-                                    <path fill-rule="evenodd" d="M12 2a1 1 0 0 1 1 1v8h8a1 1 0 1 1 0 2h-8v8a1 1 0 0 1-2 0v-8H3a1 1 0 1 1 0-2h8V3a1 1 0 0 1 1-1z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-sm">Create Post</span>
-                                <select id="create-post" class="px-2 focus:ring-2 focus:ring-blue-500 bg-[#7145FE] text-white rounded-md ml-2">
-                                    
-                                </select>
-                            </button>
-                        </div>
-                        
+                        <div class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 p-4">
+                            <!-- Left Content -->
+                            <div class="text-center md:text-left ml-4">
+                                <h2 class="text-lg text-[#0E1B34] font-bold">Posts Analytics</h2>
+                                <p class="text-sm">Schedule, publish and manage posts and stories, and more.</p>
+                            </div>
+                            
+                            <!-- Create Post Button Section -->
+                            <div class="flex flex-col md:flex-row items-center justify-center gap-3">
+                                <button class="flex items-center bg-[#7145FE] text-white p-2 rounded-md hover:bg-[#8A6EF0]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5 mr-1">
+                                        <path fill-rule="evenodd" d="M12 2a1 1 0 0 1 1 1v8h8a1 1 0 1 1 0 2h-8v8a1 1 0 0 1-2 0v-8H3a1 1 0 1 1 0-2h8V3a1 1 0 0 1 1-1z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="text-sm">Create Post</span>
+                                    <select id="create-post" class="px-2 focus:ring-2 focus:ring-blue-500 bg-[#7145FE] text-white rounded-md ml-2">
+                                        <!-- Add options here if necessary -->
+                                    </select>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <!-- body part -->
@@ -148,67 +149,69 @@
 
                        
                         <!-- head section -->
-                        <section class="flex justify-between gap-34">
-                            <div>
-                                <div class="flex items-center gap-3">
-                                  <div class="avatar">
-                                    <div class="mask mask-squircle h-12 w-12">
-                                      <img
-                                        src="images/Content Image.png"
-                                        alt="Avatar Tailwind CSS Component" />
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <a href="#" class="font-bold text-[10px]">
-                                        Hello, I have reviewed both your work and portfolio....
-                                    </a>
-                                    
-                                    <div class="text-sm ">
-                                        <div class="flex items-center gap-2 mt-1">
-                                            <div class="flex items-center">
-                                                <!-- Icon with round border -->
-                                                <i class="fa-regular text-[12px] fa-user text-white border rounded-full bg-[#7145FE] w-5 h-5 flex items-center justify-center"></i>
-                                                <!-- Account Name Text -->
-                                                <p class="ml-1 text-gray-700 text-[10px]">Account Name</p>
-                                            </div>
-                                            <!-- Scheduled Button -->
-                                            <button class="px-1 text-[10px] font-bold rounded-2xl text-[#1A8245] bg-[#b1e6c6]">Published</button>
-                                            <p class="text-[10px]">Wed Oct 16, 3:07</p>
+                        <table class="overflow-x-auto table ">
+                            <section class="flex justify-between gap-34">
+                                <div>
+                                    <div class="flex items-center gap-3">
+                                      <div class="avatar">
+                                        <div class="mask mask-squircle h-12 w-12">
+                                          <img
+                                            src="images/Content Image.png"
+                                            alt="Avatar Tailwind CSS Component" />
                                         </div>
-    
+                                      </div>
+                                      <div>
+                                        <a href="#" class="font-bold text-[15px]">
+                                            Hello, I have reviewed both your work and portfolio....
+                                        </a>
+                                        
+                                        <div class="text-md ">
+                                            <div class="flex items-center gap-2 mt-1">
+                                                <div class="flex items-center">
+                                                    <!-- Icon with round border -->
+                                                    <i class="fa-regular text-[12px] fa-user text-white border rounded-full bg-[#7145FE] w-5 h-5 flex items-center justify-center"></i>
+                                                    <!-- Account Name Text -->
+                                                    <p class="ml-1 text-gray-700 text-[12px]">Account Name</p>
+                                                </div>
+                                                <!-- Scheduled Button -->
+                                                <button class="p-1 px-2 text-[12px] font-bold rounded-2xl text-[#1A8245] bg-[#b1e6c6]">Published</button>
+                                                <p class="text-[12px]">Wed Oct 16, 3:07</p>
+                                            </div>
+        
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
-                                </div>
-                              </div>
-                             
-                              
-                              
-                              <div class="flex justify-between gap-3 mt-2">
-                                  <!-- Edit Button -->
-                                  <button class="flex items-center justify-center text-[#7145FE] bg-transparent hover:bg-blue-100 p-2 border rounded-md w-24 h-10 md:w-28 md:h-9">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 mr-2">
-                                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232a2 2 0 012.828 0l1.414 1.414a2 2 0 010 2.828L8.586 19.414a2 2 0 01-1.414.586H4a1 1 0 01-1-1v-3.172a2 2 0 01.586-1.414l10.646-10.646zM16.586 7.414l-2.828-2.828-1.414 1.414 2.828 2.828 1.414-1.414z" />
-                                    </svg>
-                                    <span class="text-[10px] font-semibold">Edit Post</span>
-                                  </button>
-                                
-                                  <!-- Delete Button -->
-                                  <button class="flex items-center justify-center text-red-600 bg-transparent hover:bg-red-100 p-2 border rounded-md w-24 h-10 md:w-28 md:h-9">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 mr-2">
-                                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 7v14a2 2 0 002 2h8a2 2 0 002-2V7M6 7h12M6 7h12m-3-5h-6m1.5 0V3m-3 0h6m-6 0h-3.5a1.5 1.5 0 00-1.5 1.5V6h18V4.5a1.5 1.5 0 00-1.5-1.5H12z" />
-                                    </svg>
-                                    <span class="text-[10px] font-semibold">Delete Post</span>
-                                  </button>
-                                
-                                  <!-- Cross Button -->
-                                  <button class="flex items-center justify-center p-2 text-black border border-gray-500 hover:bg-red-700 w-5 h-1 md:w-12 md:h-9">
-                                    <i class="fa-solid fa-xmark"></i>
-                                  </button>
-                                </div>
-                                
-                               
-                        </section>
-
+                                 
+                                  
+                                  
+                                  <div class="  md:flex justify-between gap-3 mt-2">
+                                      <!-- Edit Button -->
+                                      <button class="flex items-center justify-center text-[#7145FE] bg-transparent hover:bg-blue-100 p-2 border rounded-md w-24 h-10 md:w-28 md:h-9">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 mr-2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232a2 2 0 012.828 0l1.414 1.414a2 2 0 010 2.828L8.586 19.414a2 2 0 01-1.414.586H4a1 1 0 01-1-1v-3.172a2 2 0 01.586-1.414l10.646-10.646zM16.586 7.414l-2.828-2.828-1.414 1.414 2.828 2.828 1.414-1.414z" />
+                                        </svg>
+                                        <span class="text-[12px] font-semibold">Edit Post</span>
+                                      </button>
+                                    
+                                      <!-- Delete Button -->
+                                      <button class="flex items-center justify-center text-red-600 bg-transparent hover:bg-red-100 p-2 border rounded-md w-24 h-10 md:w-28 md:h-9">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 mr-2">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 7v14a2 2 0 002 2h8a2 2 0 002-2V7M6 7h12M6 7h12m-3-5h-6m1.5 0V3m-3 0h6m-6 0h-3.5a1.5 1.5 0 00-1.5 1.5V6h18V4.5a1.5 1.5 0 00-1.5-1.5H12z" />
+                                        </svg>
+                                        <span class="text-[11px] font-semibold">Delete Post</span>
+                                      </button>
+                                    
+                                      <!-- Cross Button -->
+                                      <button class="flex items-center justify-center p-2 text-black border border-gray-500 hover:bg-red-700 w-5 h-1 md:w-12 md:h-9">
+                                        <i class="fa-solid fa-xmark"></i>
+                                      </button>
+                                    </div>
+                                    
+                                   
+                            </section>
+    
+                        </table>
 
 
 
@@ -338,16 +341,16 @@
                                     </div>
                                   </div>
                                 </td>
-                                
-                               
-                                
-                                  
+                        
                                 
                               </tr>
                               <p class="text-[9px] text-[#64748B] py-4">Empowering Your Business with Innovative Digital Solutions
                                 SIM Service Activation: Streamline connectivity with our efficient SIM activation services!
                                 Lorem ipsum odor amet, consectetuer adipiscing elit. Cras fringilla scelerisque facilisi dictumst neque consequat blandit non libero. Non ornare ridiculus netus aliquet curabitur. Commodo enim amet consectetur maximus eget sodales nulla facilisis. Malesuada elementum pellentesque sociosqu hendrerit gravida rhoncus. Lacinia eget suspendisse eros mollis arcu. </p>
-                                <img src="images/Post Thumbnail.png" alt="">
+
+                                <div>
+                                    <img src="images/Post Thumbnail.png" alt="">
+                                </div>
                         </section>
 
                           
